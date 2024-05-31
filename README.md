@@ -8,9 +8,9 @@ This project implements a Spotify song recommender system using three different 
 
 The project uses three different datasets containing information about tracks and artists. These datasets are stored in the `data` folder:
 
-- `archive`: Contains datasets of tracks and a dataset of artists with their popularity and genres.
-- `archive (1)`: Contains a dataset of tracks.
-- `archive (2)`: Contains a dataset of tracks.
+- `archive`: Contains datasets of tracks and a dataset of artists with their popularity and genres. [Link](https://www.kaggle.com/datasets/yamaerenay/spotify-dataset-19212020-600k-tracks/data)
+- `archive (1)`: Contains a dataset of tracks. [Link](https://www.kaggle.com/datasets/rodolfofigueroa/spotify-12m-songs)
+- `archive (2)`: Contains a dataset of tracks. [](https://www.kaggle.com/datasets/amitanshjoshi/spotify-1million-tracks)
 
 ### Columns in the Datasets
 
