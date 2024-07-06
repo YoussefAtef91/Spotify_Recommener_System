@@ -1,0 +1,25 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="container-fluid p-5 mt-5">
+    <div class="row justify-content-between">
+        <div class="col-7">
+            <div class="row">
+                <div class="col-8 align-content-between">
+                    <h1 class="mb-4" style="color:aliceblue;">Recommendations</h1>
+                </div>
+                <div class="col-4 align-content-center pb-4">
+                    <a href="{{url_for('home')}}" class="btn" id="tryBtn">Try another one</a>
+                </div>
+            </div>
+            <hr style="color: #b3b3b3;">
+
+            {% for track_id in recommendations %}
+            <iframe style="border-radius:12px"  src="https://open.spotify.com/embed/track/{{ track_id }}"  width="100%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            {%endfor%}
+        </div>
+        <div class="col-5">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/{{playlist_id}}" width="100%" height="1000" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+{%endblock content%}

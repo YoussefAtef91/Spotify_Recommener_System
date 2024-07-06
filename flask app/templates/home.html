@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+    {% block content %}
+    <div class="container-fluid w-75 mt-5 p-5">
+        <form id="playlistForm" action="" method="POST">
+            {{ form.hidden_tag() }}
+            <div class="form-group row">
+                <div class="col">
+                {{ form.playlist_url(id="input_field", placeholder="Playlist URL") }}
+                {{ form.submit(id='submit_button') }}
+            </div>
+            </div>
+        </form>
+        <div class="kabobloader" id="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+
+
+    <script>
+        document.getElementById('playlistForm').addEventListener('submit', function() {
+            document.getElementById('spinner').style.display = 'block';
+        });
+    </script>
+    {% endblock content %}
