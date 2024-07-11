@@ -3,9 +3,3 @@
 
 # Ignore environment files
 .env
-
-# Ignore data file
-data/
-
-# Ignore model files
-models
